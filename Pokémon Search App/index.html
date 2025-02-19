@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <h1>Pokémon Search</h1>
+            <div class="search-box">
+                <input type="text" id="search-input" required placeholder="Enter Pokémon name or ID">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+
+        <div class="pokemon-card">
+            <div class="pokemon-image">
+                <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon sprite">
+            </div>
+            
+            <div class="pokemon-info">
+                <h2 id="pokemon-name">POKEMON NAME</h2>
+                <p id="pokemon-id">#ID</p>
+                
+                <div class="pokemon-types" id="types">
+                </div>
+
+                <div class="pokemon-stats">
+                    <div class="stat-group">
+                        <div class="stat">
+                            <p>Weight: <span id="weight">0</span></p>
+                            <p>Height: <span id="height">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="base-stats">
+                        <div class="stat-bar">
+                            <span>HP:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="hp-bar"></div>
+                            </div>
+                            <span id="hp">0</span>
+                        </div>
+
+                        <div class="stat-bar">
+                            <span>Attack:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="attack-bar"></div>
+                            </div>
+                            <span id="attack">0</span>
+                        </div>
+
+                        <div class="stat-bar">
+                            <span>Defense:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="defense-bar"></div>
+                            </div>
+                            <span id="defense">0</span>
+                        </div>
+
+                        <div class="stat-bar">
+                            <span>Special Attack:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="special-attack-bar"></div>
+                            </div>
+                            <span id="special-attack">0</span>
+                        </div>
+
+                        <div class="stat-bar">
+                            <span>Special Defense:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="special-defense-bar"></div>
+                            </div>
+                            <span id="special-defense">0</span>
+                        </div>
+
+                        <div class="stat-bar">
+                            <span>Speed:</span>
+                            <div class="progress-bar">
+                                <div class="progress" id="speed-bar"></div>
+                            </div>
+                            <span id="speed">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
